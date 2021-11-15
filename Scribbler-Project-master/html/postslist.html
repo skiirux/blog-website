@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../styles/header.css" />
+    <link rel="stylesheet" href="../styles/postslist.css" />
+  </head>
+
+  <body>
+    <!-- TODO: Include code for header here -->
+    <div class="header">
+      <button id="up" class="topbuttons">Sign up</button>
+      <button id="in" class="topbuttons">Sign in</button>
+      <a class="logo">ScriBBler</a>
+      <p class="belowtext">Explore, Imagine, Create</p>
+    </div>
+
+    <!-- sign in button modal -->
+    <div id="mymodal" class="modal-bg">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h1 id="h1">Welcome Back!</h1>
+        <form>
+          <h3>Username</h3>
+          <input
+            class="m1i"
+            type="text"
+            placeholder="Enter Username"
+            required
+          />
+          <h3>Password</h3>
+          <input
+            class="m1i"
+            type="Password"
+            placeholder="Enter Password"
+            required
+          />
+          <button id="msi">Sign In</button>
+          <div class="nm">Not a member?<span id="redirect">Sign Up</span></div>
+        </form>
+      </div>
+    </div>
+    <!-- sign up button modal -->
+    <div id="mymodal2" class="modal-bg">
+      <div class="modal-content">
+        <span class="close1">&times;</span>
+        <h1 id="h1">Get Started</h1>
+        <form>
+          <h3>Full Name</h3>
+          <input
+            class="m1i"
+            type="text"
+            placeholder="Enter Full Name"
+            required
+          />
+          <h3>Username</h3>
+          <input
+            class="m1i"
+            type="text"
+            placeholder="Enter Username"
+            required
+          />
+          <h3>Password</h3>
+          <input
+            class="m1i"
+            type="Password"
+            placeholder="Enter Password"
+            required
+          />
+          <h3>Confirm Password</h3>
+          <input
+            class="m1i"
+            type="Password"
+            placeholder="Confirm Password"
+            required
+          />
+          <button id="msi">Sign Up</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- ATTENTION: The HTML code for the list of posts has been given to you. You can feel free to add/delete/modify this code. You need to write the proper CSS and JavaScript code corresponding to this page so that the result looks like the screenshots given to you in the Project Statement. -->
+
+    <div class="title">
+      <h1 id="blog-title">How to write easily describable code</h1>
+    </div>
+
+    <div>
+      <div class="author-name">
+        <h2>Cedd Burge</h2>
+      </div>
+
+      <div class="edit-button">
+        <button id="editButton">Edit <i class="fas fa-edit"></i>📝</button>
+      </div>
+
+      <div class="save-button">
+        <button id="saveButton">Save <i class="fas fa-save"></i>💾</button>
+      </div>
+    </div>
+
+    <div class="blogpost">
+      <p id="blog-content-text">
+        When code is not describable using words, most people have to do some
+        mental mapping to turn it in to words. This wastes mental energy, and
+        you run the risk of getting the mapping wrong. Different people will map
+        to different words, which leads to confusion when discussing the code.
+      </p>
+    </div>
+
+    <div class="like-button">
+      <button id="likeButton"><i class="fas fa-thumbs-up">👍</i> Liked</button>
+      <p id="no-of-likes">Be the first one to like this !</p>
+    </div>
+
+    <div class="comments">
+      <input
+        id="comment-text"
+        type="text"
+        placeholder="Leave a comment"
+        name="comment"
+        required
+      />
+      <div>
+        <button id="addCommentButton">Comment</button>
+      </div>
+      <h2>All Comments</h2>
+      <div class="new-comments"></div>
+    </div>
+
+    <script src="../scripts/index.js"></script>
+    <script src="../scripts/postslist.js"></script>
+  </body>
+</html>

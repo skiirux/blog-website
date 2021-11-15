@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- TODO: Include Font Awesome file here -->
+    <!-- TODO: Include Google Fonts file here -->
+    
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/header.css">
+
+</head>
+
+<body>
+    <!-- TODO: Include all your code for the header and home page here -->
+    <div class="header">
+        <button id="up" class="topbuttons">Sign up</button>
+    	<button id="in" class="topbuttons">Sign in</button>
+    	<a class="logo">ScriBBler</a>
+    	<p class="belowtext">Explore, Imagine, Create</p>
+    </div>
+<!-- sign in button modal -->
+    <div id="mymodal" class="modal-bg">
+    	<div class="modal-content">
+            <span class="close">&times;</span>
+    		<h1 id="h1">Welcome Back!</h1>
+    		<form>
+                <h3>Username</h3>
+                <input class="m1i" type="text" placeholder="Enter Username" required>
+                <h3>Password</h3>
+                <input class="m1i" type="Password" placeholder="Enter Password" required>     
+                <button id="msi">Sign In</button> 
+                <div class="nm">Not a member?<span id="redirect">Sign Up</span></div>
+            </form>
+    	</div>
+    	
+    </div>
+<!-- sign up button modal -->
+    <div id="mymodal2" class="modal-bg">
+        <div class="modal-content">
+            <span class="close1">&times;</span>
+            <h1 id="h1">Get Started</h1>
+            <form>
+                <h3>Full Name</h3>
+                <input class="m1i" type="text" placeholder="Enter Full Name" required>
+                <h3>Username</h3>
+                <input class="m1i" type="text" placeholder="Enter Username" required>
+                <h3>Password</h3>
+                <input class="m1i" type="Password" placeholder="Enter Password" required>
+                <h3>Confirm Password</h3>
+                <input class="m1i" type="Password" placeholder="Confirm Password" required>
+                <button id="msi">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+<!--  Code for post buttons -->    
+    <div class="postb">
+        <button class="midbuttons" id="all" onclick="window.location.href='html/bloglist.html'">All Posts</button>
+        <button class="midbuttons" id="create">Create Post</button>
+        
+    </div>
+
+<!-- ---------Create post modal---------   -->
+    <div id="mymodal3" class="modal-bg">
+        <div class="modal-content2">
+            <span class="close2">&times;</span>
+            <h1 id="h1">Pen Your Post</h1>
+            <div id="md3">
+            <form>
+                <h3>Title:</h3>
+                <input type="textbox" id="title">
+                <h3>Content:</h3>
+                <input type="textbox" id="content">
+                <button id="msp">Create</button>
+            </form>
+            </div>
+        </div>
+        
+    </div>
+
+    <script type="text/javascript" src="./scripts/index.js"></script>
+</body>
+
+</html>
